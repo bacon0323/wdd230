@@ -57,3 +57,7 @@ footer {
     text-align: center;
     width: 600px;
 }
+
+span, p {
+    display: inline-block;
+}
