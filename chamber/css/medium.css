@@ -1,0 +1,41 @@
+@media only screen and (min-width: 35rem) {
+    header p {
+        margin-top: 10px;
+        border: 2px solid #cc2229;
+        border-radius: 5px;
+        background-color: #eee;
+    }
+
+    header div h1 {
+        font-size: 2em;
+        text-align: left;
+        margin-left: 20px;
+    }
+    header div h2 {
+        font-size: 1.5em;
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    main section {
+        display: grid;
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap: 10px;
+    }
+
+    p {margin: 0;}
+
+    section p:nth-child(3), section p:nth-child(6) {
+        grid-column: 1 / 2;
+    }
+    section p:nth-child(4), section p:nth-child(7) {
+        grid-column: 2 / 3;
+    }
+    section p:nth-child(1), section p:nth-child(2), section p:nth-child(5) {
+        grid-column: 1 / 3;
+    }
+
+    footer {
+        margin-top: 10px;
+    }
+}
