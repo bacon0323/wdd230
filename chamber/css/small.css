@@ -4,8 +4,7 @@
 
 header, main, footer {
     max-width: 1980px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 10px;
 }
 
 img {
