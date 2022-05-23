@@ -2,6 +2,12 @@
     font-family: 'Roboto', serif;
 }
 
+header, main, footer {
+    max-width: 1980px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 img {
     width: 100px;
     display: inline;
