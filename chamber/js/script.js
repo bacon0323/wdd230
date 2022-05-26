@@ -15,3 +15,10 @@ const datefieldUK = document.getElementById("date-uk");
 const now = new Date();
 const fulldateUK = new Intl.DateTimeFormat("en-UK", {dateStyle: "full"}).format(now);
 datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
+
+// Pop-up Message
+const daynumber = now.getDay();
+const banner = document.getElementById('banner');
+if (daynumber === 1 || daynumber === 2) {
+    banner.style.display = "block";
+}
