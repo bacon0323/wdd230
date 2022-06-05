@@ -15,21 +15,14 @@
 
     nav ul#primaryNav {
         display: flex;
-        margin-left: 2vw;
+        justify-content: space-evenly;
+        border: 2px solid #2566af;
     }
 
-    nav ul li a {
-        padding-right: 5px;
-        padding-left: 5px;
-        border-left: 1px solid black;
+    nav li {
+        display: block;
         font-size: 1.2em;
-    }
-    nav ul li:last-child {
-        border-right: 1px solid black;
-    }
-
-    nav ul li.active a {
-        border: none;
+        flex: 1 1 auto;
     }
 
     main section {

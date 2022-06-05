@@ -21,8 +21,7 @@
     main section div {margin-top: 0}
     main section {
         display: grid;
-        grid-template-rows: repeat(5, 1fr);
-        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
         grid-gap: 10px;
     }
 

@@ -148,13 +148,18 @@ span, .ft_txt {
 
 #herodiv {
     position: relative;
+    /* background-color: transparent; */
+    overflow: hidden;
+    min-height: 400px;
 }
 #heroImg {
     position: absolute;
     width: 100%;
+    height: auto;
     border-radius: 5px;
     margin-top: -10px;
     margin-left: -10px;
+    overflow: hidden;
 }
 #heroImgTitle {
     text-align: center;
