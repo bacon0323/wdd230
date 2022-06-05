@@ -18,7 +18,7 @@
 <body>
     <header>
         <section id="header-grid">
-        <img id="page-logo" src="images/chamber-of-commerce-logo.png" alt="Chamber head logo">
+        <img src="images/chamber-of-commerce-logo.webp" alt="Chamber head logo">
         <div> 
             <h1>Mesa Chamber of Commerce</h1>
             <h2>Greatness in the Community</h2>
@@ -42,12 +42,18 @@
         </nav>
     </header>
     <main>
-        <picture src=""></picture>
+        <picture>
+            <img id="heroImgRI" src="images/heroimg1050px.jpg" alt="heroimg" sizes="50vw"
+            srcset="images/heroimg400px.jpg 400w,
+                    images/heroimg650px.jpg 650w,
+                    images/heroimg900px.jpg 900w,
+                    images/heroimg1050px.jpg 1050w">
+        </picture>
         <div id="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
-        <h1>Home</h1>
+        <h2>Home</h2>
         <section>
             <div id="herodiv"> <!-- Hero image -->
-                <img id="heroImg" src="images/mesaimg.jpg" alt="city of mesa">
+                <img id="heroImg" src="images/mesaimg.webp" alt="city of mesa">
                 <h3 id="heroImgTitle"><b>Weclome to the City of Mesa</b></h3>
                 <button id="heroBtn">Join the Chamber</button>
             </div>
@@ -59,10 +65,10 @@
                 <div><!-- Weather -->
                 <h3 id="cw1"><b>Current Weather</b></h3>
                 <img id="cw2" src="images/sun.jpg" alt="image of the sun">
-                <p id="cw3">33°C</p>
+                <p id="cw3"> Current Temperature: <span id="temp">34</span>&deg;</p>
                 <p id="cw4">Partly Cloudy</p>
-                <p id="cw5">Wind Speed: 2.5km/h</p>
-                <p id="cw6">Wind Chill: N/A</p>
+                <p id="cw5">Current Wind Speed: <span id="speed">60</span>mph</p>
+                <p id="cw6"><span id="chill">message</span></p>
             </div>
             <div> <!-- News -->
                 <h3><b>News release</b></h3>
@@ -88,9 +94,10 @@
         </section> 
     </main>
     <footer>
-        <img id="page-logo" src="images/chamber-of-commerce-logo.png" alt="Chamber head logo">
+        <img src="images/chamber-of-commerce-logo.png" alt="Chamber head logo">
         <p>@ <span id="year"></span>&nbsp; Mesa Chamber &#124; Kyle J. Norton &#124; WDD 230 Project &#124; Last Modification: <span id="time"></span></p>
     <script src="js/script.js"></script>
+    <script src="js/windchill.js"></script>
     </footer>
 
 </body>
