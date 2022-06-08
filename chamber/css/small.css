@@ -217,7 +217,5 @@ section div:nth-child(6), section div:nth-child(7) { /*Spotlight 1 Spotlight 2*/
     width: 100%;
     height: auto;
     border-radius: 5px;
-    margin-top: -10px;
-    margin-left: -10px;
     overflow: hidden;
 }

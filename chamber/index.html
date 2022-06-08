@@ -43,11 +43,10 @@
     </header>
     <main>
         <picture>
-            <img id="heroImgRI" src="images/heroimg1050px.jpg" alt="heroimg" sizes="50vw"
-            srcset="images/heroimg400px.jpg 400w,
-                    images/heroimg650px.jpg 650w,
-                    images/heroimg900px.jpg 900w,
-                    images/heroimg1050px.jpg 1050w">
+                <source media="(max-width: 400px)" srcset="images/heroimg400px.jpg">
+                <source media="(max-width: 650px)" srcset="images/heroimg650px.jpg">
+                <source media="(max-width: 900px)" srcset="images/heroimg900px.jpg">
+                <img id="heroImgRI" src="images/heroimg1050px.jpg" alt="heroimg">    
         </picture>
         <div id="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
         <h2>Home</h2>
