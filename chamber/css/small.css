@@ -67,11 +67,6 @@ nav ul li.active a {
     background-color: #ffffff;
 }
 
-/* #header-grid {
-    display: grid;
-    grid-template-columns: 100px auto;
-} */
-
 header div h1 {
     font-size: 1.3em;
     margin: 0;
