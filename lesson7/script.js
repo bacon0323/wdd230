@@ -1,29 +1,13 @@
-let imagesToLoad = document.querySelectorAll('img[data-src]');
+if(!!window.IntersectionObserver){console.log("I support Inserction Observer.")}
 
-function loadImages(img) {
-    const src = img.getAttribute('data-src');
-    if(!src) {
-        return;
+let myObserver = new IntersectionObserver((myListA, myObserver) => { 
+    myListA.forEach(cupX => {
+    if(cupX.isIntersecting){
+        cupX.target.src = cupX.target.dataset.src;
+        cupX.target.removeAttribute('data-src');
+        myObserver.unobserve(cupX.target);
     }
-    img.src = src;
-}
-
-const imgOptions = {
-    threshold: 1,
-    rootMargin: '0px 0px -300px 0px'
-};
-
-const imageObserver = new IntersectionObserver((entries, imageObserver) => {
-    entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-            return;
-        } else {
-            loadImages(entry.target);
-            imageObserver.unobserve(entry.target);
-        }
-    })
-}, imgOptions);
-
-imagesToLoad.forEach((img) => {
-        loadImages(img);
     });
+}, {rootMargin: "0px 0px -100px 0px"});
+
+document.querySelectorAll('img[data-src]').forEach(img => {myObserver.observe(img) })

@@ -1,9 +1,16 @@
 @media only screen and (min-width: 64rem) {
     body {
-        max-width: 100rem;
+        max-width: 1400px;
         margin: auto;
     }
     
+    header p {
+        margin-top: 10px;
+        border: 2px solid #cc2229;
+        border-radius: 5px;
+        background-color: #eee;
+    }
+
     header div h1 {
         font-size: 2.5em;
     }
@@ -16,7 +23,6 @@
     nav ul#primaryNav {
         display: flex;
         justify-content: space-evenly;
-        border: 2px solid #2566af;
     }
 
     nav li {
@@ -25,42 +31,66 @@
         flex: 1 1 auto;
     }
 
-    main section {
+    .home{
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
     
-    section div:nth-child(1) { /*Hero with call ot action*/
+    .home div:nth-child(1) { /*Hero with call ot action*/
         grid-column: 2 / 4;
         grid-row: 1 / 3;
     }
-    section div:nth-child(2) { /*Event*/
+    .home div:nth-child(2) { /*Event*/
         grid-column: 1 / 2;
         grid-row: 1 / 2;
     }
-    section div:nth-child(3) { /*Current Weather*/
+    .home div:nth-child(3) { /*Current Weather*/
         grid-column: 1 / 2;
         grid-row: 2 / 3;
     }
-    section div:nth-child(4) { /*News Release*/
+    .home div:nth-child(4) { /*News Release*/
         grid-column: 2 / 5;
         grid-row: 3 / 4;
     }
-    section div:nth-child(5) { /*Join*/
+    .home div:nth-child(5) { /*Join*/
         grid-column: 1 / 2;
         grid-row: 3 / 4;
     }
-    section div:nth-child(6) { /*Spotlight 1*/
+    .home div:nth-child(6) { /*Spotlight 1*/
         grid-column: 4 / 5;
         grid-row: 1 / 2;
     }
-    section div:nth-child(7) { /*Spotlight 2*/
+    .home div:nth-child(7) { /*Spotlight 2*/
         grid-column: 4 / 5;
         grid-row: 2 / 3;
     }
 
-header section div {
-    grid-row: none;
-    grid-column: none;
-}
+    header section div {
+        grid-row: none;
+        grid-column: none;
+    }
+
+    /* Discover */
+
+    .discover {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .places {
+        grid-column: 1/2;
+    }
+
+    .demographics {
+        display: block;
+        grid-column: 2/3;
+    }
+
+    .education {grid-column: initial;}
+
+    .population, .gender, .income {margin-right: 0;}
+    .race, .language, .veterans {margin-left: 0;}
+
+    
 }

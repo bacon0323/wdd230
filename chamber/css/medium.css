@@ -1,10 +1,4 @@
 @media only screen and (min-width: 35rem) {
-    header p {
-        margin-top: 10px;
-        border: 2px solid #cc2229;
-        border-radius: 5px;
-        background-color: #eee;
-    }
 
     header div h1 {
         font-size: 2em;
@@ -18,8 +12,8 @@
     }
 
 
-    main section div {margin-top: 0}
-    main section {
+    .home section div {margin-top: 0}
+    .home {
         display: grid;
         grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
         grid-gap: 10px;
@@ -28,27 +22,37 @@
     p {margin: 0;}
 
     
-    section div:nth-child(1), section div:nth-child(5) {
+    .home div:nth-child(1), .home section div:nth-child(5) {
         grid-column: 1 / 3;
     }
-    section div:nth-child(2){
+    .home div:nth-child(2){
         grid-column: 1/2;
         grid-row: 5/6;
     }
-    section div:nth-child(3) {
+    .home div:nth-child(3) {
         grid-column: 2 / 3;
     }
-    section div:nth-child(4){
+    .home div:nth-child(4){
         grid-column: 1/3;
         grid-row: 2/3;
     }
-    section div:nth-child(5) {
+    .home div:nth-child(5) {
         grid-row: 4/5;
     }
-    section div:nth-child(6),  section div:nth-child(7){
+    .home div:nth-child(6),  .home section div:nth-child(7){
         grid-row: 3/4;
     }
     footer {
         margin-top: 10px;
     }
+
+    .demographics {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .education {grid-column: 1/3;}
+
+    .population, .gender, .income {margin-right: 5px;}
+    .race, .language, .veterans {margin-left: 5px;}
 }

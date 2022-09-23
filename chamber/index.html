@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mesa Chamber of Commerce</title>
+    <title>Mesa Chamber Home</title>
     <meta name="description" content="Where business owners of the Mesa, Arizona community can come together to uplift eachother and help eachother set their business up for success.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,12 +22,11 @@
         <div> 
             <h1>Mesa Chamber of Commerce</h1>
             <h2>Greatness in the Community</h2>
-            <!-- <div class="social">
+        </div>
+        <div class="social">
                 <a href="https://facebook.com"><img src="images/facebook.png" alt="facebook home page"></a>
                 <a href="https://linkedin.com"><img src="images/twitter.png" alt="linkedin home page"></a>
-            </div> -->
-        </div>
-        
+            </div>
     </section>
         <p id="date-uk"></p>
         <nav>
@@ -42,17 +41,11 @@
         </nav>
     </header>
     <main>
-        <picture>
-                <source media="(max-width: 400px)" srcset="images/heroimg400px.jpg">
-                <source media="(max-width: 650px)" srcset="images/heroimg650px.jpg">
-                <source media="(max-width: 900px)" srcset="images/heroimg900px.jpg">
-                <img id="heroImgRI" src="images/heroimg1050px.jpg" alt="heroimg">    
-        </picture>
         <div id="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
         <h2>Home</h2>
-        <section>
+        <section class="home">
             <div id="herodiv"> <!-- Hero image -->
-                <img id="heroImg" src="images/mesaimg.webp" alt="city of mesa">
+                <img id="heroImg" src="images/mesaimg.jpg" alt="city of mesa">
                 <h3 id="heroImgTitle"><b>Weclome to the City of Mesa</b></h3>
                 <button id="heroBtn">Join the Chamber</button>
             </div>
@@ -61,9 +54,9 @@
                 <h4>The Diamond Shack</h4><br>
                 <p>Join us for the grand opening of The Diamond Shack Thursday at 1:00 p.m.</p>
             </div> 
-                <div><!-- Weather -->
+            <div><!-- Weather -->
                 <h3 id="cw1"><b>Current Weather</b></h3>
-                <img id="cw2" src="images/sun.jpg" alt="image of the sun">
+                <img id="cw2" loading="lazy" src="images/sun.jpg" alt="image of the sun">
                 <p id="cw3"> Current Temperature: <span id="temp">34</span>&deg;</p>
                 <p id="cw4">Partly Cloudy</p>
                 <p id="cw5">Current Wind Speed: <span id="speed">60</span>mph</p>
@@ -80,20 +73,20 @@
             </div>
             <div> <!-- Spotlight 1 -->
                 <h3><b>Thankful Transport</b></h3>
-                <img src="images/truck.png" alt="cartoon blue truck">
+                <img loading="lazy" src="images/truck.png" alt="cartoon blue truck">
                 <p>"We get it there for you!"</p>
                 <p>hello@thankfultransport.com <br><br> 123-456-7890 | Mobile</p>
             </div>
             <div> <!-- Spotlight 2 -->
                 <h3><b>Code Primera</b></h3>
-                <img src="images/keyboard.jpg" alt="drawn keyboard">
+                <img loading="lazy" src="images/keyboard.jpg" alt="drawn keyboard">
                <p>An after school coding instructional program</p>
                <p>contact@codeprimera.com <br><br> 098-765-4321 | Mobile</p>
             </div>
         </section> 
     </main>
     <footer>
-        <img src="images/chamber-of-commerce-logo.png" alt="Chamber head logo">
+        <img loading="lazy" src="images/chamber-of-commerce-logo.png" alt="Chamber head logo">
         <p>@ <span id="year"></span>&nbsp; Mesa Chamber &#124; Kyle J. Norton &#124; WDD 230 Project &#124; Last Modification: <span id="time"></span></p>
     <script src="js/script.js"></script>
     <script src="js/windchill.js"></script>
